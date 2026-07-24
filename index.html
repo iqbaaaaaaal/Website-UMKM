@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Direktori UMKM Desa Tambakboyo" />
+    <title>UMKM Desa Tambakboyo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-fixes.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#umkm">Lewati ke daftar UMKM</a>
+    <header class="site-header" id="beranda">
+      <nav class="nav container" aria-label="Navigasi utama">
+        <a class="brand" href="#beranda" aria-label="Kembali ke beranda">
+          <img class="brand-logo" id="brandLogo" src="assets/images/logo.png" alt="Logo KKN" />
+          <span class="logo-fallback" aria-hidden="true">K</span>
+          <span class="brand-text"><strong id="navVillage">Tambakboyo</strong><small>Direktori UMKM</small></span>
+        </a>
+        <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="navLinks">☰<span class="sr-only">Buka menu</span></button>
+        <div class="nav-links" id="navLinks">
+          <a href="#tentang">Tentang Desa</a><a href="#umkm">UMKM</a><a href="#galeri">Galeri</a><a href="#kontak">Kontak</a>
+        </div>
+      </nav>
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">Katalog digital produk lokal</p>
+          <h1>Temukan karya terbaik dari <em id="heroVillage">Desa Tambakboyo</em>.</h1>
+          <p class="hero-description" id="heroDescription"></p>
+          <div class="hero-actions"><a class="button button-gold" href="#umkm">Jelajahi UMKM <span>→</span></a><a class="button button-outline" href="#tentang">Kenali desa</a></div>
+          <p class="team-label" id="teamLabel"></p>
+        </div>
+        <div class="hero-art" aria-hidden="true"><div class="sun"></div><div class="hill hill-back"></div><div class="hill hill-front"></div><div class="hero-card"><span>✦</span><p>Dari warga,<br />untuk Indonesia.</p></div></div>
+      </section>
+    </header>
+    <main>
+      <section class="intro section container" id="tentang">
+        <div><p class="eyebrow">Tentang desa</p><h2>Potensi lokal yang tumbuh bersama.</h2></div>
+        <div class="intro-content"><p id="villageDescription"></p><dl class="village-facts"><div><dt>Lokasi</dt><dd id="villageLocation"></dd></div><div><dt>Fokus potensi</dt><dd id="villagePotential"></dd></div></dl></div>
+      </section>
+      <section class="umkm-section section" id="umkm">
+        <div class="container"><p class="eyebrow">Direktori usaha</p><div class="section-heading"><h2>UMKM pilihan Tambakboyo</h2><p>Gunakan pencarian atau kategori untuk menemukan produk yang Anda cari.</p></div>
+          <div class="directory-tools"><label class="search"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Cari nama UMKM atau produk..." /></label><div class="filters" id="categoryFilters" aria-label="Filter kategori"></div></div>
+          <div class="umkm-grid" id="umkmGrid" aria-live="polite"></div><p class="empty-state" id="emptyState" hidden>Belum ada UMKM yang sesuai. Coba kata kunci lain.</p>
+        </div>
+      </section>
+      <section class="gallery section container" id="galeri"><p class="eyebrow">Cerita dari desa</p><div class="section-heading"><h2>Galeri kegiatan & produk</h2><p>Ganti foto contoh ini melalui <code>data.js</code>.</p></div><div class="gallery-grid" id="galleryGrid"></div></section>
+      <section class="cta"><div class="container cta-inner"><div><p class="eyebrow">Dukung produk lokal</p><h2>Setiap pembelian berarti langkah untuk desa.</h2></div><a class="button button-gold" id="ctaWhatsapp" href="#kontak" target="_blank" rel="noopener">Hubungi kami →</a></div></section>
+    </main>
+    <footer id="kontak"><div class="container footer-grid"><div><a class="brand footer-brand" href="#beranda"><span class="logo-fallback">K</span><span class="brand-text"><strong id="footerVillage">Tambakboyo</strong><small>Direktori UMKM</small></span></a><p id="footerTeam"></p></div><div><h3>Kontak</h3><a id="contactEmail" href="#">Email</a><a id="contactInstagram" href="#" target="_blank" rel="noopener">Instagram</a><a id="contactWhatsapp" href="#" target="_blank" rel="noopener">WhatsApp</a></div><div><h3>Info</h3><p id="footerUniversity"></p><p id="footerAddress"></p></div></div><div class="container copyright">© <span id="currentYear"></span> <span id="copyrightVillage">Desa Tambakboyo</span>. Dibuat untuk pengembangan UMKM lokal.</div></footer>
+    <dialog id="umkmModal"><button class="modal-close" id="modalClose" aria-label="Tutup">×</button><div id="modalContent"></div></dialog>
+    <script src="data.js"></script><script src="script.js"></script>
+  </body>
+</html>
