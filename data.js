@@ -8,15 +8,14 @@ const SITE_DATA = {
     university: "Universitas Diponegoro",
     team: "TIM KKN UNDIP TA 2026",
     village: "Desa Tambakboyo",
-    location: "Tambakboyo, Indonesia", // Ganti kecamatan, kabupaten, dan provinsi
-    potential: "Kuliner rumahan, kerajinan, dan pertanian",
+    location: "Desa Tambakboyo,Kecamatan Tawangsari,Jawa Tengah, Indonesia", // Ganti kecamatan, kabupaten, dan provinsi
+    potential: "Kuliner rumahan, kerajinan, dan Koveksi",
     heroDescription: "Ruang digital untuk mengenalkan produk unggulan, cerita usaha, dan semangat gotong royong warga Desa Tambakboyo.",
     villageDescription: "Desa Tambakboyo memiliki potensi usaha warga yang beragam. Melalui katalog ini, produk lokal dapat ditemukan lebih mudah oleh masyarakat dan calon pelanggan.",
     contacts: {
-      whatsapp: "628123456789", // Ganti nomor WhatsApp koordinator
-      email: "kkn.tambakboyo@example.com",
+      whatsapp: "6288216646061", // Ganti nomor WhatsApp koordinator
+      email: "tambakboyoumkm@gmail.com",
       instagram: "https://instagram.com/",
-      address: "Sekretariat KKN Desa Tambakboyo"
     }
   },
   // Tambah UMKM: salin satu blok { ... } di bawah, lalu isi datanya.
