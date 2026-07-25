@@ -9,7 +9,7 @@ const SITE_DATA = {
     team: "TIM KKN UNDIP TA 2026",
     village: "Desa Tambakboyo",
     location: "Desa Tambakboyo,Kecamatan Tawangsari,Jawa Tengah, Indonesia", // Ganti kecamatan, kabupaten, dan provinsi
-    potential: "Kuliner rumahan, kerajinan, dan Koveksi",
+    potential: "Kuliner Lokal, kerajinan, dan Usaha Koveksi",
     heroDescription: "Ruang digital untuk mengenalkan produk unggulan, cerita usaha, dan semangat gotong royong warga Desa Tambakboyo.",
     villageDescription: "Desa Tambakboyo memiliki potensi usaha warga yang beragam. Melalui katalog ini, produk lokal dapat ditemukan lebih mudah oleh masyarakat dan calon pelanggan.",
     contacts: {
